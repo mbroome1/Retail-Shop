@@ -1,0 +1,12 @@
+﻿@page "{productId:int}"
+@model RetailShop.Pages.Products.DetailsModel
+@{
+    ViewData["Title"] = Model.Product.Name;
+}
+
+<h1>@ViewData["Title"]</h1>
+<p>$@Model.Product.Price</p>
+<p>@Model.Product.ShortDescription</p>
+<p>@Model.Product.LongDescription</p>
+
+
