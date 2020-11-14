@@ -1,0 +1,11 @@
+﻿//Variable overrides
+$theme-colors: ( "primary": #10c2b1, "danger": #ff4136, "light": #d3d3d3 );
+$primary: teal;
+
+/*$body-bg: #f0f0f0;*/
+
+$jumbotron-bg: #fff;
+
+
+//Bootstrap Sass files
+@import "./../../node_modules/bootstrap/scss/bootstrap";

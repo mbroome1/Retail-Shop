@@ -5,36 +5,40 @@
 }
 
 <h1>Products</h1>
-
+<div class="row">
     @foreach (var product in Model.Products)
     {
 
-
-        <div class="card">
-            <div class="card-header">@product.Name</div>
-            <div class="card-body">
-                <div>@product.ShortDescription</div>
-                <div>@product.Price</div>
-            </div>
-            <div class="card-footer">
-                <a class="" asp-page="./Details" asp-route-productId="@product.Id">View</a>
+        <div class="col">
+            <div class="card">
+                <div class="card-header">@product.Name</div>
+                <div class="card-body">
+                    <div>@product.ShortDescription</div>
+                    <div>@product.Price</div>
+                </div>
+                <div class="card-footer">
+                    <a class="" asp-page="./Details" asp-route-productId="@product.Id">View</a>
+                </div>
             </div>
         </div>
+
+
+
     }
+</div>
 
-
-@*
-    <tr>
-        <td>@product.Id</td>
-        <td>@product.Name</td>
-        <td>@product.ShortDescription</td>
-        <td>@product.LongDescription</td>
-        <td>@product.Price</td>
-        <td>@product.Category</td>
-        <td>@product.CreatedOnDate</td>
-        <td>@product.ModifiedOnDate</td>
-        <td>@product.IsDeleted</td>
-        <td>@product.IsNew</td>
-        <td>@product.Id</td>
-    </tr>
-*@
+    @*
+        <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td>@product.ShortDescription</td>
+            <td>@product.LongDescription</td>
+            <td>@product.Price</td>
+            <td>@product.Category</td>
+            <td>@product.CreatedOnDate</td>
+            <td>@product.ModifiedOnDate</td>
+            <td>@product.IsDeleted</td>
+            <td>@product.IsNew</td>
+            <td>@product.Id</td>
+        </tr>
+    *@
